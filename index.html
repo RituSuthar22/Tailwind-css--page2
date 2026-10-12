@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tailwind CSS - page2</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Cinzel:wght@500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body class="font-['Roboto']">
+
+    <!-- header section  -->
+    <header>
+
+        <!-- TOP BAR -->
+        <div class="bg-[#FF6F00] text-white">
+            <div
+                class="mx-auto flex w-full max-w-6xl flex-col items-center gap-2 px-4 py-2 md:flex-row md:justify-between">
+                <p class="text-center text-xs italic md:text-left md:text-sm">
+                    Urgent : Awesome Template for Charity &amp; Non-profit Site
+                </p>
+                <div class="flex gap-5 text-sm">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" class="peer sr-only" />
+
+        <!-- LOGO + CONTACT ROW -->
+        <div class="bg-white">
+            <div class="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4">
+
+                <a href="#" class="flex items-center gap-2">
+                    <div
+                        class="flex h-12 w-12 items-center justify-center rounded-full bg-[#FF6F00] text-xl text-white">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span
+                            class="font-['Cinzel'] text-2xl font-semibold leading-none tracking-wider text-[#222222]">NGOO</span>
+                        <span class="text-[10px] text-[#9A9A9A]">Charity &amp; Non-profit</span>
+                    </div>
+                </a>
+
+                <div class="hidden items-center gap-8 lg:flex">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="flex h-12 w-12 items-center justify-center rounded-full bg-[#F2F2F2] text-[#FF6F00]">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="flex flex-col text-xs">
+                            <span class="font-bold text-[#222222]">Mail :</span>
+                            <span class="text-[#9A9A9A]">info@ngoocharity.com</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="flex h-12 w-12 items-center justify-center rounded-full bg-[#F2F2F2] text-[#FF6F00]">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="flex flex-col text-xs">
+                            <span class="font-bold text-[#222222]">Contact Us :</span>
+                            <span class="text-[#9A9A9A]">+62 7100 1234</span>
+                        </div>
+                    </div>
+
+                    <a href="#" class="bg-[#FF6F00] px-8 py-3 text-xs font-medium uppercase text-white">
+                        Donate Now
+                    </a>
+                </div>
+
+                <label for="menu-toggle" class="cursor-pointer text-2xl text-[#222222] lg:hidden">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+        </div>
+
+        <!-- NAV BAR -->
+        <nav class="hidden bg-[#222222] peer-checked:block lg:block">
+            <div class="mx-auto w-full max-w-6xl px-4">
+                <ul class="flex flex-col text-xs font-bold uppercase text-white lg:flex-row lg:gap-10">
+
+                    <!-- HOME -->
+                    <li class="group relative border-b border-white/10 lg:border-0">
+                        <div
+                            class="flex items-center justify-between py-3 text-[#FF6F00] lg:justify-start lg:gap-3 lg:py-4">
+                            <a href="#">Home</a>
+                            <i class="fas fa-chevron-down text-[8px] text-[#9A9A9A]"></i>
+                        </div>
+                        <ul
+                            class="hidden flex-col bg-[#2E2E2E] font-medium group-hover:flex group-focus-within:flex lg:absolute lg:left-0 lg:top-full lg:z-10 lg:w-48 lg:border-t-2 lg:border-[#FF6F00]">
+                            <li><a href="#" class="flex px-4 py-2 hover:text-[#FF6F00]">Home One</a></li>
+                            <li><a href="#" class="flex px-4 py-2 hover:text-[#FF6F00]">Home Two</a></li>
+                            <li><a href="#" class="flex px-4 py-2 hover:text-[#FF6F00]">Home Three</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- ABOUT -->
+                    <li class="group relative border-b border-white/10 lg:border-0">
+                        <div class="flex items-center justify-between py-3 lg:justify-start lg:gap-3 lg:py-4">
+                            <a href="#">About</a>
+                            <i class="fas fa-chevron-down text-[8px] text-[#9A9A9A]"></i>
+                        </div>
+                        <ul
+                            class="hidden flex-col bg-[#2E2E2E] font-medium group-hover:flex group-focus-within:flex lg:absolute lg:left-0 lg:top-full lg:z-10 lg:w-48 lg:border-t-2 lg:border-[#FF6F00]">
+                            <li><a href="#" class="flex px-4 py-2 hover:text-[#FF6F00]">Our Story</a></li>
+                            <li><a href="#" class="flex px-4 py-2 hover:text-[#FF6F00]">Our Team</a></li>
+                            <li><a href="#" class="flex px-4 py-2 hover:text-[#FF6F00]">Our Mission</a></li>
+                            <li><a href="#" class="flex px-4 py-2 hover:text-[#FF6F00]">FAQ</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- CAUSES -->
+                    <li class="group relative border-b border-white/10 lg:border-0">
+                        <div class="flex items-center justify-between py-3 lg:justify-start lg:gap-3 lg:py-4">
+                            <a href="#">Causes</a>
+                            <i class="fas fa-chevron-down text-[8px] text-[#9A9A9A]"></i>
+                        </div>
+                        <ul
+                            class="hidden flex-col bg-[#2E2E2E] font-medium group-hover:flex group-focus-within:flex lg:absolute lg:left-0 lg:top-full lg:z-10 lg:w-48 lg:border-t-2 lg:border-[#FF6F00]">
+                            <li><a href="#" class="flex px-4 py-2 hover:text-[#FF6F00]">All Causes</a></li>
+                            <li><a href="#" class="flex px-4 py-2 hover:text-[#FF6F00]">Clean Water</a></li>
+                            <li><a href="#" class="flex px-4 py-2 hover:text-[#FF6F00]">Education</a></li>
+                            <li><a href="#" class="flex px-4 py-2 hover:text-[#FF6F00]">Healthcare</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- PAGE -->
+                    <li class="group relative border-b border-white/10 lg:border-0">
+                        <div class="flex items-center justify-between py-3 lg:justify-start lg:gap-3 lg:py-4">
+                            <a href="#">Page</a>
+                            <i class="fas fa-chevron-down text-[8px] text-[#9A9A9A]"></i>
+                        </div>
+                        <ul
+                            class="hidden flex-col bg-[#2E2E2E] font-medium group-hover:flex group-focus-within:flex lg:absolute lg:left-0 lg:top-full lg:z-10 lg:w-48 lg:border-t-2 lg:border-[#FF6F00]">
+                            <li><a href="#" class="flex px-4 py-2 hover:text-[#FF6F00]">Gallery</a></li>
+                            <li><a href="#" class="flex px-4 py-2 hover:text-[#FF6F00]">Blog</a></li>
+                            <li><a href="#" class="flex px-4 py-2 hover:text-[#FF6F00]">Volunteers</a></li>
+                            <li><a href="#" class="flex px-4 py-2 hover:text-[#FF6F00]">404 Page</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- EVENTS -->
+                    <li class="group relative border-b border-white/10 lg:border-0">
+                        <div class="flex items-center justify-between py-3 lg:justify-start lg:gap-3 lg:py-4">
+                            <a href="#">Events</a>
+                            <i class="fas fa-chevron-down text-[8px] text-[#9A9A9A]"></i>
+                        </div>
+                        <ul
+                            class="hidden flex-col bg-[#2E2E2E] font-medium group-hover:flex group-focus-within:flex lg:absolute lg:left-0 lg:top-full lg:z-10 lg:w-48 lg:border-t-2 lg:border-[#FF6F00]">
+                            <li><a href="#" class="flex px-4 py-2 hover:text-[#FF6F00]">Upcoming Events</a></li>
+                            <li><a href="#" class="flex px-4 py-2 hover:text-[#FF6F00]">Past Events</a></li>
+                            <li><a href="#" class="flex px-4 py-2 hover:text-[#FF6F00]">Event Details</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- CONTACT US -->
+                    <li class="flex items-center py-3 lg:py-4">
+                        <a href="#">Contact Us</a>
+                    </li>
+
+                    <li class="flex pb-4 lg:hidden">
+                        <a href="#" class="flex w-full justify-center bg-[#FF6F00] py-3 font-medium text-white">Donate
+                            Now</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- hero section -->
+
+    <section
+        class="flex min-h-[420px] flex-col bg-[#111111] bg-cover bg-center font-['Roboto'] bg-[url('herosection_bg.jfif')] md:min-h-[570px]">
+
+        <div class="mx-auto flex w-full max-w-6xl flex-1 items-center px-4 py-10">
+            <div class="flex w-full max-w-lg flex-col items-start">
+
+                <!-- Heading box -->
+                <h1
+                    class="flex w-full bg-[#222222]/80 px-7 py-5 font-['Lora'] text-2xl leading-10 text-white md:text-4xl">
+                    <span>
+                        <span class="text-[#FF6F00]">#South</span> Kampar's <br> Malnutrition Crisis
+                    </span>
+                </h1>
+
+                <!-- Paragraph box -->
+                <p class="mt-2 flex w-full bg-white/80 px-7 py-4 text-sm leading-relaxed text-[#222222]">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet.
+                </p>
+
+                <!-- Button -->
+                <a href="#" class="mt-8 flex bg-[#FF6F00] px-8 py-3 text-xs font-medium uppercase text-white">
+                    Donate Now
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- need help section -->
+    <section class="bg-white py-16 font-['Roboto']">
+        <div class="mx-auto flex w-full max-w-6xl flex-col items-center px-4">
+
+            <!-- Heading -->
+            <h2 class="font-['Lora'] text-3xl font-bold text-[#222222]">
+                We <span class="text-[#FF6F00]">Need</span> Your Help
+            </h2>
+            <div class="mt-4 flex h-[2px] w-10 bg-[#FF6F00]"></div>
+            <p class="mt-6 text-center text-xs text-[#8A8A8A]">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet.
+            </p>
+
+            <!-- Cards -->
+            <div class="mt-12 flex w-full flex-col gap-6 md:flex-row">
+
+                <!-- Card 1 -->
+                <div
+                    class="flex flex-1 flex-col rounded bg-[#F2F2F2] shadow transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    <img src="card1.jfif" alt="Education for Syrian school"
+                        class="flex h-52 w-full rounded-t object-cover" />
+                    <div class="flex flex-1 flex-col p-5">
+                        <h3 class="text-base uppercase text-[#222222]">Education for Syrian School</h3>
+                        <p class="mt-3 flex-1 text-xs leading-relaxed text-[#8A8A8A]">
+                            Teritatis et quasi architecto. Sed ut perspiciatis unde omnis iste natus error sit
+                            voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                            invent.
+                        </p>
+                        <div class="mt-6 flex items-center justify-between">
+                            <div class="flex items-baseline gap-2">
+                                <span class="text-base font-bold text-[#FF6F00]">$2,580</span>
+                                <span class="text-xs text-[#8A8A8A]">to go</span>
+                            </div>
+                            <span class="text-sm text-[#222222]">80%</span>
+                        </div>
+                        <div class="mt-2 flex h-[3px] w-full bg-[#666666]">
+                            <div class="flex h-full w-[80%] bg-[#FF6F00]"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="flex flex-1 flex-col rounded bg-[#F2F2F2] shadow transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    <img src="card2.jpg" alt="Home for Kampar's child"
+                        class="flex h-52 w-full rounded-t object-cover" />
+                    <div class="flex flex-1 flex-col p-5">
+                        <h3 class="text-base uppercase text-[#222222]">Home for Kampar's Child</h3>
+                        <p class="mt-3 flex-1 text-xs leading-relaxed text-[#8A8A8A]">
+                            Teritatis et quasi architecto. Sed ut perspiciatis unde omnis iste natus error sit
+                            voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                            invent.
+                        </p>
+                        <div class="mt-6 flex items-center justify-between">
+                            <div class="flex items-baseline gap-2">
+                                <span class="text-base font-bold text-[#FF6F00]">$950</span>
+                                <span class="text-xs text-[#8A8A8A]">to go</span>
+                            </div>
+                            <span class="text-sm text-[#222222]">70%</span>
+                        </div>
+                        <div class="mt-2 flex h-[3px] w-full bg-[#666666]">
+                            <div class="flex h-full w-[70%] bg-[#FF6F00]"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="flex flex-1 flex-col rounded bg-[#F2F2F2] shadow transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    <img src="card1.jfif" alt="Clean water for South Sudan"
+                        class="flex h-52 w-full rounded-t object-cover" />
+                    <div class="flex flex-1 flex-col p-5">
+                        <h3 class="text-base uppercase text-[#222222]">Clean Water for South Sudan's</h3>
+                        <p class="mt-3 flex-1 text-xs leading-relaxed text-[#8A8A8A]">
+                            Teritatis et quasi architecto. Sed ut perspiciatis unde omnis iste natus error sit
+                            voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                            invent.
+                        </p>
+                        <div class="mt-6 flex items-center justify-between">
+                            <div class="flex items-baseline gap-2">
+                                <span class="text-base font-bold text-[#FF6F00]">$560</span>
+                                <span class="text-xs text-[#8A8A8A]">to go</span>
+                            </div>
+                            <span class="text-sm text-[#222222]">90%</span>
+                        </div>
+                        <div class="mt-2 flex h-[3px] w-full bg-[#666666]">
+                            <div class="flex h-full w-[90%] bg-[#FF6F00]"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Button -->
+            <a href="#"
+                class="mt-12 flex bg-[#FF6F00] px-8 py-3 text-xs font-medium uppercase text-white transition duration-300 hover:bg-[#222222]">
+                See All Causes
+            </a>
+        </div>
+    </section>
+
+    <!-- urgent causes section -->
+    <section
+        class="flex bg-[#111111] bg-cover bg-center py-16 font-['Roboto'] bg-[url('https://images.pexels.com/photos/19198219/pexels-photo-19198219.jpeg?cs=srgb&dl=pexels-wyxina-tresse-311038210-19198219.jpg&fm=jpg')]">
+        <div class="mx-auto flex w-full max-w-6xl flex-col items-center gap-10 px-4 md:flex-row md:gap-12">
+
+            <!-- Left: content -->
+            <div class="flex w-full flex-col text-white md:w-1/2">
+
+                <!-- Small title -->
+                <p class="text-semibold">
+                    <span class="text-[#FF6F00]">Urgent</span> Causes
+                </p>
+                <div class="mt-3 flex h-[1px] w-8 bg-white/70"></div>
+
+                <!-- Heading -->
+                <h2 class="mt-5 font-['Lora'] text-2xl font-bold leading-[1.6] md:text-3xl md:leading-[1.7]">
+                    <span class="text-[#FF6F00]">#School</span> for South Kampar's <span>Students</span>
+                </h2>
+
+                <!-- Paragraph -->
+                <p class="mt-5 text-xs leading-relaxed">
+                    Teritatis et quasi architecto. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo invent. Sed ut
+                    perspiciatis unde omnis iste natus error sit .
+                </p>
+
+                <!-- Progress -->
+                <div class="mt-8 flex items-center justify-between text-xs">
+                    <span class="text-[#FF6F00] font-semibold">Donated</span>
+                    <span>80%</span>
+                </div>
+                <div class="mt-2 flex h-[6px] w-full bg-white">
+                    <div class="flex h-full w-[80%] bg-[#FF6F00]"></div>
+                </div>
+
+                <!-- Amounts -->
+                <div class="mt-6 flex flex-wrap items-baseline gap-2">
+                    <span class="text-xl font-bold text-[#FF6F00]">$18,500</span>
+                    <span class="text-xs">Raised of</span>
+                    <span class="text-xl font-bold text-[#FF6F00]">$25,000</span>
+                    <span class="text-xs">Goal</span>
+                </div>
+            </div>
+
+            <!-- Right: image + button -->
+            <div class="relative flex w-full md:w-1/2">
+                <img src="causes_bg.jfif" alt="Children from South Kampar school"
+                    class="flex h-64 w-full object-cover md:h-80" />
+                <a href="#"
+                    class="absolute bottom-10 left-1/2 flex -translate-x-1/2 bg-[#FF6F00] px-7 py-4 text-xs font-medium uppercase text-white transition duration-300 hover:bg-[#222222]">
+                    Donate Now
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- how to help section -->
+
+    <section class="flex bg-white pt-16 font-['Roboto'] md:pt-20">
+        <div class="mx-auto flex w-full max-w-6xl flex-col items-center gap-10 px-4 md:flex-row md:items-end md:gap-12">
+
+            <!-- Left: person image -->
+            <div class="flex w-full justify-center md:w-1/2">
+                <img src="help_bg.png" alt="Smiling man presenting"
+                    class="flex h-80 w-auto object-contain md:h-[560px]" />
+            </div>
+
+            <!-- Right: content -->
+            <div class="flex w-full flex-col pb-10 md:w-1/2 md:pb-16">
+
+                <!-- Heading -->
+                <h2 class="font-['Lora'] text-2xl font-bold text-[#222222] md:text-3xl">
+                    How To <span class="text-[#FF6F00]">Help</span> Us
+                </h2>
+                <div class="mt-4 flex h-[2px] w-8 bg-[#FF6F00]"></div>
+                <p class="mt-6 text-xs leading-relaxed text-[#8A8A8A]">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore mque laudantium,
+                    totam rem aperiam, eaque ipsa quae ab illo invent.
+                </p>
+
+                <!-- Item 1 -->
+                <div class="mt-10 flex items-start gap-5">
+                    <div
+                        class="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#FF6F00] text-xl text-white">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="font-['Lora'] text-lg font-bold text-[#222222]">Send Donation</h3>
+                        <p class="mt-2 text-xs leading-relaxed text-[#8A8A8A]">
+                            Teritatis et quasi architecto. Sed ut perspiciatis unde omnis iste natus error sit
+                            voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                            invent.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="mt-8 flex items-start gap-5">
+                    <div
+                        class="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#FF6F00] text-xl text-white">
+                        <i class="fas fa-child-reaching"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="font-['Lora'] text-lg font-bold text-[#222222]">Become Volunteer</h3>
+                        <p class="mt-2 text-xs leading-relaxed text-[#8A8A8A]">
+                            Teritatis et quasi architecto. Sed ut perspiciatis unde omnis iste natus error sit
+                            voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                            invent.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="mt-8 flex items-start gap-5">
+                    <div
+                        class="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#FF6F00] text-xl text-white">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="font-['Lora'] text-lg font-bold text-[#222222]">Share Media</h3>
+                        <p class="mt-2 text-xs leading-relaxed text-[#8A8A8A]">
+                            Teritatis et quasi architecto. Sed ut perspiciatis unde omnis iste natus error sit
+                            voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                            invent.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- help many people section -->
+
+    <section
+        class="flex bg-[#222222] bg-cover bg-center py-16 font-['Roboto'] bg-[url('https://wallpaperaccess.com/full/3880007.jpg')] opacity-0.2 md:py-20">
+        <div class="mx-auto flex w-full max-w-4xl flex-col items-center px-4 text-center">
+
+            <!-- Heading -->
+            <h2 class="font-['Lora'] text-2xl font-bold text-white md:text-3xl">
+                We Help Many <span class="text-[#FF6F00]">People</span>
+            </h2>
+
+            <!-- Sub title -->
+            <p class="mt-5 text-xs  text-[#FF6F00] md:text-sm">
+                Want to Become a Volunteer
+            </p>
+
+            <!-- Paragraph -->
+            <p class="mt-8 text-sm leading-relaxed text-white">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quaerat atque, dolore. Amido ipsum
+                dolor sit amet, consectetur adipisicing elit. Numquam quaerat atque, dolore.Lorem ipsum dolor sit amet,
+                consectetur.
+            </p>
+
+            <!-- Buttons -->
+            <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+                <a href="#"
+                    class="flex justify-center rounded-sm bg-white px-8 py-3 text-xs font-medium uppercase text-[#FF6F00] transition duration-300 hover:bg-[#FF6F00] hover:text-white">
+                    Learn More
+                </a>
+                <a href="#"
+                    class="flex justify-center rounded-sm bg-[#FF6F00] px-8 py-3 text-xs font-medium uppercase text-white transition duration-300 hover:bg-white hover:text-[#FF6F00]">
+                    Join Us Now
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- volunteer section -->
+
+
+    <section class="flex bg-white py-16 font-['Roboto']">
+        <div class="mx-auto flex w-full max-w-4xl flex-col items-center px-4">
+
+            <!-- Heading -->
+            <h2 class="font-['Lora'] text-2xl font-bold text-[#222222] md:text-3xl">
+                Our <span class="text-[#FF6F00]">Volunteers</span> Says
+            </h2>
+            <div class="mt-4 flex h-[2px] w-10 bg-[#FF6F00]"></div>
+            <p class="mt-6 text-center text-xs text-[#8A8A8A]">
+                Lorem ipsum dolor sit amet, onsectetur adipiscing cons ectetur nulla. Sed at ullamcorper risus.
+            </p>
+
+
+            <div class="mt-12 flex w-full flex-wrap">
+
+                <!-- Item 1 -->
+                <div class="flex w-full items-start gap-5 p-4 md:w-1/2">
+                    <div
+                        class="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-full bg-[#EDEDED]">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXJMFnNkXP8rdlGRkwMsIqHPZ907pWNN1XXyeMZ9BJNg&s=10"
+                            alt="John Doel" class="flex h-full w-full object-cover" />
+                    </div>
+                    <div class="flex flex-col">
+                        <i class="fas fa-quote-left text-xl text-[#FF6F00]"></i>
+                        <p class="mt-1 text-xs italic leading-relaxed text-[#444444]">
+                            "Teritatis et quasi architecto. Sed ut perspiciatis unde omnis iste natus error sit
+                            voluptatem accusantium dolore mque laudantium, totam rem aperiam".
+                        </p>
+                        <h3 class="mt-2 font-['Lora'] text-sm font-bold text-[#FF6F00]">- John Doel</h3>
+                        <span class="text-[10px] italic text-[#8A8A8A]">Businessman</span>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="flex w-full items-start gap-5 p-4 md:w-1/2">
+                    <div
+                        class="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-full bg-[#EDEDED]">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgFAXJfQ1IFssIiCQgucN8hH4hmpRbWtQtE4G5qPTIrg&s=10"
+                            alt="Raisa Doel" class="flex h-full w-full object-cover" />
+                    </div>
+                    <div class="flex flex-col">
+                        <i class="fas fa-quote-left text-xl text-[#FF6F00]"></i>
+                        <p class="mt-1 text-xs italic leading-relaxed text-[#444444]">
+                            "Teritatis et quasi architecto. Sed ut perspiciatis unde omnis iste natus error sit
+                            voluptatem accusantium dolore mque laudantium, totam rem aperiam, Teritatis et quasi
+                            architecto".
+                        </p>
+                        <h3 class="mt-2 font-['Lora'] text-sm font-bold text-[#FF6F00]">- Raisa Doel</h3>
+                        <span class="text-[10px] italic text-[#8A8A8A]">House Keeper</span>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="flex w-full items-start gap-5 p-4 md:w-1/2">
+                    <div
+                        class="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-full bg-[#EDEDED]">
+                        <img src="https://img.magnific.com/free-photo/close-up-portrait-curly-handsome-european-male_176532-8133.jpg?semt=ais_hybrid&w=740&q=80"
+                            alt="Josh Doel" class="flex h-full w-full object-cover" />
+                    </div>
+                    <div class="flex flex-col">
+                        <i class="fas fa-quote-left text-xl text-[#FF6F00]"></i>
+                        <p class="mt-1 text-xs italic leading-relaxed text-[#444444]">
+                            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore mque
+                            laudantium, totam rem aperiam, Teritatis et quasi architecto".
+                        </p>
+                        <h3 class="mt-2 font-['Lora'] text-sm font-bold text-[#FF6F00]">- Josh Doel</h3>
+                        <span class="text-[10px] italic text-[#8A8A8A]">Artist</span>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="flex w-full items-start gap-5 p-4 md:w-1/2">
+                    <div
+                        class="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-full bg-[#EDEDED]">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjFuIt0JhyAxsiLbjs4CjIrcqK0PtbH98_-t3A0rJszw&s=10"
+                            alt="Sasha Doel" class="flex h-full w-full object-cover" />
+                    </div>
+                    <div class="flex flex-col">
+                        <i class="fas fa-quote-left text-xl text-[#FF6F00]"></i>
+                        <p class="mt-1 text-xs italic leading-relaxed text-[#444444]">
+                            "Teritatis et quasi architecto. Sed ut perspiciatis unde omnis iste natus error sit
+                            voluptatem accusantium dolore mque laudantium, totam rem aperiam, Teritatis et quasi
+                            architecto".
+                        </p>
+                        <h3 class="mt-2 font-['Lora'] text-sm font-bold text-[#FF6F00]">- Sasha Doel</h3>
+                        <span class="text-[10px] italic text-[#8A8A8A]">Freelance</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- gallery section -->
+    <section class="flex bg-[#EBEBEB] py-16 font-['Roboto']">
+        <div class="mx-auto flex w-full max-w-5xl flex-col items-center px-4">
+
+            <h2 class="font-['Lora'] text-2xl font-bold text-[#222222] md:text-3xl">
+                Our <span class="text-[#FF6F00]">Gallery</span>
+            </h2>
+            <div class="mt-4 flex h-[2px] w-10 bg-[#FF6F00]"></div>
+            <p class="mt-6 text-center text-xs text-[#8A8A8A]">
+                Lorem ipsum dolor sit amet, onsectetur adipiscing cons ectetur nulla. Sed at ullamcorper risus.
+            </p>
+
+
+            <div class="mt-12 flex w-full flex-wrap">
+
+                <div class="flex w-full p-2 sm:w-1/2 lg:w-1/3">
+                    <img src="gal_img1.png" alt="Gallery 1" class="flex h-56 w-full object-cover md:h-60" />
+                </div>
+
+                <div class="flex w-full p-2 sm:w-1/2 lg:w-1/3">
+                    <img src="gal_img2.png" alt="Gallery 2" class="flex h-56 w-full object-cover md:h-60" />
+                </div>
+
+                <div class="flex w-full p-2 sm:w-1/2 lg:w-1/3">
+                    <img src="gal_img3.png" alt="Gallery 3" class="flex h-56 w-full object-cover md:h-60" />
+                </div>
+
+                <div class="flex w-full p-2 sm:w-1/2 lg:w-1/3">
+                    <img src="gal_img4.png" alt="Gallery 4" class="flex h-56 w-full object-cover md:h-60" />
+                </div>
+
+                <div class="flex w-full p-2 sm:w-1/2 lg:w-1/3">
+                    <img src="gal_img5.png" alt="Gallery 5" class="flex h-56 w-full object-cover md:h-60" />
+                </div>
+
+                <div class="flex w-full p-2 sm:w-1/2 lg:w-1/3">
+                    <img src="gal_img6.png" alt="Gallery 6" class="flex h-56 w-full object-cover md:h-60" />
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Event section -->
+    <section class="flex bg-[#111111] bg-cover bg-center bg-[url('herosection_bg.jfif')] font-['Roboto']">
+
+        <!-- Content -->
+        <div class="mx-auto flex w-full max-w-6xl flex-col gap-15 px-4 py-16 md:flex-row md:items-center md:gap-12">
+
+            <!-- Left: featured event box -->
+            <div class="flex w-full items-center gap-4 md:w-1/2">
+                <span class="flex text-sm text-white"><i class="fas fa-arrow-left"></i></span>
+
+                <div class="flex w-full flex-col bg-black/60 p-6">
+                    <h3 class="font-['Lora'] text-2xl font-bold text-white">#Events</h3>
+                    <h4 class="mt-3 text-sm font-medium uppercase text-[#FF6F00]">Meet &amp; Greet Volunteer NY</h4>
+                    <p class="mt-3 text-xs leading-relaxed text-[#B5B5B5]">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore mque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo invent.
+                    </p>
+                    <a href="#"
+                        class="mt-5 flex text-xs font-medium text-white transition duration-300 hover:text-[#FF6F00]">Read
+                        More...</a>
+                </div>
+            </div>
+
+            <!-- Right section -->
+            <div class="flex w-full flex-col md:w-1/2">
+
+                <!-- Heading -->
+                <h2 class="font-['Lora'] text-2xl font-semibold text-white md:text-3xl">
+                    Upcoming <span class="text-[#FF6F00]">Events</span>
+                </h2>
+                <div class="mt-4 flex h-[2px] w-8 bg-[#FF6F00]"></div>
+                <p class="mt-5 text-xs leading-relaxed text-white">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore mque laudantium.
+                </p>
+
+                <!-- Event 1 -->
+                <div class="mt-8 flex items-start gap-5">
+                    <div class="flex h-12 w-14 shrink-0 flex-col items-center justify-center bg-[#FF6F00] text-white">
+                        <span class="text-xl leading-none">02</span>
+                        <span class="mt-1 text-[10px] font-medium uppercase">May</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="text-sm uppercase text-white">Gathering Books for Children</h3>
+                        <div class="mt-2 flex flex-wrap gap-4 text-[10px] italic text-[#FF6F00]">
+                            <span><i class="far fa-clock mr-1"></i>09:00 Am</span>
+                            <span><i class="fas fa-location-dot mr-1"></i>Sanford, FL</span>
+                        </div>
+                        <p class="mt-3 text-xs leading-relaxed text-[#B5B5B5]">
+                            Teritatis et quasi architecto. Sed ut perspiciatis unde omnis iste natus error sit
+                            voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                            invent.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="mt-8 flex items-start gap-5">
+                    <div class="flex h-12 w-14 shrink-0 flex-col items-center justify-center bg-[#FF6F00] text-white">
+                        <span class="text-xl leading-none">26</span>
+                        <span class="mt-1 text-[10px] font-medium uppercase">Aug</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="text-sm uppercase text-white">Meet &amp; Greet Volunteer NY</h3>
+                        <div class="mt-2 flex flex-wrap gap-4 text-[10px] italic text-[#FF6F00]">
+                            <span><i class="far fa-clock mr-1"></i>09:00 Am</span>
+                            <span><i class="fas fa-location-dot mr-1"></i>New York, US</span>
+                        </div>
+                        <p class="mt-3 text-xs leading-relaxed text-[#B5B5B5]">
+                            Teritatis et quasi architecto. Sed ut perspiciatis unde omnis iste natus error sit
+                            voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                            invent.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- partner section -->
+    <section class="flex bg-white py-16 font-['Roboto']">
+        <div class="mx-auto flex w-full max-w-6xl flex-col items-center px-4">
+
+
+            <h2 class="font-['Lora'] text-2xl font-bold text-[#222222] md:text-3xl">
+                Our <span class="text-[#FF6F00]">Partners</span>
+            </h2>
+            <div class="mt-4 flex h-[2px] w-10 bg-[#FF6F00]"></div>
+            <p class="mt-6 text-center text-xs text-[#8A8A8A]">
+                Lorem ipsum dolor sit amet, onsectetur adipiscing cons ectetur nulla. Sed at ullamcorper risus.
+            </p>
+
+
+            <div class="mt-12 flex w-full flex-wrap">
+
+                <div class="flex w-1/2 p-2 sm:w-1/3 lg:w-1/6">
+                    <div
+                        class="flex h-28 w-full items-center justify-center border border-[#EEEEEE] p-4 transition duration-300 hover:shadow-lg">
+                        <img src="logo1.png" alt="Partner 1" class="flex max-h-full max-w-full object-contain" />
+                    </div>
+                </div>
+
+                <div class="flex w-1/2 p-2 sm:w-1/3 lg:w-1/6">
+                    <div
+                        class="flex h-28 w-full items-center justify-center border border-[#EEEEEE] p-4 transition duration-300 hover:shadow-lg">
+                        <img src="logo2.png" alt="Partner 2" class="flex max-h-full max-w-full object-contain" />
+                    </div>
+                </div>
+
+                <div class="flex w-1/2 p-2 sm:w-1/3 lg:w-1/6">
+                    <div
+                        class="flex h-28 w-full items-center justify-center border border-[#EEEEEE] p-4 transition duration-300 hover:shadow-lg">
+                        <img src="logo3.png" alt="Partner 3" class="flex max-h-full max-w-full object-contain" />
+                    </div>
+                </div>
+
+                <div class="flex w-1/2 p-2 sm:w-1/3 lg:w-1/6">
+                    <div
+                        class="flex h-28 w-full items-center justify-center border border-[#EEEEEE] p-4 transition duration-300 hover:shadow-lg">
+                        <img src="logo4.png" alt="Partner 4" class="flex max-h-full max-w-full object-contain" />
+                    </div>
+                </div>
+
+                <div class="flex w-1/2 p-2 sm:w-1/3 lg:w-1/6">
+                    <div
+                        class="flex h-28 w-full items-center justify-center border border-[#EEEEEE] p-4 transition duration-300 hover:shadow-lg">
+                        <img src="logo5.png" alt="Partner 5" class="flex max-h-full max-w-full object-contain" />
+                    </div>
+                </div>
+
+                <div class="flex w-1/2 p-2 sm:w-1/3 lg:w-1/6">
+                    <div
+                        class="flex h-28 w-full items-center justify-center border border-[#EEEEEE] p-4 transition duration-300 hover:shadow-lg">
+                        <img src="logo6.png" alt="Partner 6" class="flex max-h-full max-w-full object-contain" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- orange strip section -->
+    <section class="flex bg-[#FF6F00] font-['Roboto']">
+        <div class="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-4 px-4 py-6 md:flex-row">
+
+            <p class="text-center text-xs font-semibold text-white md:text-left md:text-lg">
+                Join your hand with us for a better life and beautiful future.
+            </p>
+
+            <a href="#"
+                class="flex rounded-sm bg-[#333333] px-8 py-3 text-xs font-medium uppercase text-white shadow transition duration-300 hover:bg-white hover:text-[#FF6F00]">
+                Donate Now
+            </a>
+
+        </div>
+    </section>
+
+    <!-- footer section -->
+
+    <footer
+        class="flex bg-[#222222] bg-cover bg-center bg-[url('https://wallpaperaccess.com/full/3880007.jpg')] opacity-3 py-14 font-['Roboto']">
+        <div class="mx-auto flex w-full max-w-6xl flex-wrap px-4">
+
+            <!-- Column 1: About -->
+            <div class="flex w-full flex-col p-4 sm:w-1/2 lg:w-1/4">
+                <a href="#" class="flex items-center gap-2">
+                    <div
+                        class="flex h-10 w-10 items-center justify-center rounded-full bg-[#FF6F00] text-base text-white">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span
+                            class="font-['Cinzel'] text-xl font-semibold leading-none tracking-wider text-white">NGOO</span>
+                        <span class="text-[9px] text-[#9A9A9A]">Charity &amp; Non-profit</span>
+                    </div>
+                </a>
+                <p class="mt-6 text-xs leading-relaxed text-[#9A9A9A]">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.
+                </p>
+                <a href="#" class="mt-4 flex items-center gap-2 text-xs text-[#9A9A9A] hover:text-[#FF6F00]">
+                    <i class="fas fa-chevron-right text-[8px]"></i> Read More
+                </a>
+            </div>
+
+            <!-- Column 2: Who we are -->
+            <div class="flex w-full flex-col p-4 sm:w-1/2 lg:w-1/4">
+                <h3 class="text-sm font-medium uppercase text-[#FF6F00]">Who We Are</h3>
+                <div class="mt-3 flex h-[2px] w-8 bg-[#FF6F00]"></div>
+
+                <div class="mt-6 flex gap-8">
+                    <ul class="flex flex-col gap-3 text-xs text-[#9A9A9A]">
+                        <li><a href="#" class="flex items-center gap-2 hover:text-[#FF6F00]"><i
+                                    class="fas fa-chevron-right text-[8px]"></i> About Us</a></li>
+                        <li><a href="#" class="flex items-center gap-2 hover:text-[#FF6F00]"><i
+                                    class="fas fa-chevron-right text-[8px]"></i> Causes</a></li>
+                        <li><a href="#" class="flex items-center gap-2 hover:text-[#FF6F00]"><i
+                                    class="fas fa-chevron-right text-[8px]"></i> Testimonies</a></li>
+                        <li><a href="#" class="flex items-center gap-2 hover:text-[#FF6F00]"><i
+                                    class="fas fa-chevron-right text-[8px]"></i> Gallery</a></li>
+                        <li><a href="#" class="flex items-center gap-2 hover:text-[#FF6F00]"><i
+                                    class="fas fa-chevron-right text-[8px]"></i> FAQ</a></li>
+                    </ul>
+                    <ul class="flex flex-col gap-3 text-xs text-[#9A9A9A]">
+                        <li><a href="#" class="flex items-center gap-2 hover:text-[#FF6F00]"><i
+                                    class="fas fa-chevron-right text-[8px]"></i> Our Team</a></li>
+                        <li><a href="#" class="flex items-center gap-2 hover:text-[#FF6F00]"><i
+                                    class="fas fa-chevron-right text-[8px]"></i> Events</a></li>
+                        <li><a href="#" class="flex items-center gap-2 hover:text-[#FF6F00]"><i
+                                    class="fas fa-chevron-right text-[8px]"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Column 3: Where we work -->
+            <div class="flex w-full flex-col p-4 sm:w-1/2 lg:w-1/4">
+                <h3 class="text-sm font-medium uppercase text-[#FF6F00]">Where We Work</h3>
+                <div class="mt-3 flex h-[2px] w-8 bg-[#FF6F00]"></div>
+
+                <ul class="mt-6 flex flex-col gap-3 text-xs text-[#9A9A9A]">
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-location-dot mt-1 text-[10px]"></i>
+                        <span>99 Heaven Kingdom Street, Melbourne, Australia 1510</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-envelope mt-1 text-[10px]"></i>
+                        <span>info@ngoocharity.com</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-phone mt-1 text-[10px]"></i>
+                        <span>+62 7100 1234</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Follow us -->
+            <div class="flex w-full flex-col p-4 sm:w-1/2 lg:w-1/4">
+                <h3 class="text-sm font-semibold uppercase text-[#FF6F00]">Follow Us</h3>
+                <div class="mt-3 flex h-[2px] w-8 bg-[#FF6F00]"></div>
+
+                <p class="mt-6 text-xs leading-relaxed text-[#9A9A9A]">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </p>
+                <div class="mt-5 flex gap-5 text-xs text-white">
+                    <a href="#" class="hover:text-[#FF6F00]"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-[#FF6F00]"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-[#FF6F00]"><i class="fab fa-pinterest"></i></a>
+                    <a href="#" class="hover:text-[#FF6F00]"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="hover:text-[#FF6F00]"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="hover:text-[#FF6F00]"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- copyright section -->
+    <div class="flex bg-[#111111] py-5 font-['Roboto']">
+        <div class="mx-auto flex w-full max-w-6xl justify-center px-8 md:justify-start">
+            <p class="text-center text-xs text-[#BDBDBD] md:text-left">
+                Copyright 2018 &copy; <a href="#" class="text-[#FF6F00]">NGOO PSD Template</a>. Designed by <a href="#"
+                    class="text-[#FF6F00]">Rometheme</a>.
+            </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
